@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fix for anchor scroll with sticky header */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f3ff; /* 🌸 Lavender background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Nav */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6c63ff; /* Deep lavender */
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #ddd8ff;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #ece9ff;
+  color: #333;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.hero span {
+  color: #6c63ff;
+}
+.hero p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+.hero .btn {
+  padding: 0.75rem 1.5rem;
+  background: #b497ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+.hero .btn:hover {
+  background: #a178ff;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 1rem;
+  color: #6c63ff;
+}
+
+/* Services */
+#services ul {
+  list-style: none;
+}
+#services li {
+  padding: 0.5rem;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+form input,
+form textarea {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #b497ff;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+form button:hover {
+  background-color: #a178ff;
+}
+
+/* Footer */
+footer {
+  background: #6c63ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: #ddd8ff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Portfolio Page Styles */
+.portfolio-page {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+.portfolio-page section {
+  background: #f5f3ff;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+.portfolio-page h2 {
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+.portfolio-page p {
+  color: #333;
+  font-size: 1rem;
+}
+.portfolio-page a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+.portfolio-page a:hover {
+  text-decoration: underline;
+}
+
+/* 🔷 Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.skill-box {
+  background-color: #e6ddff; /* lighter lavender */
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.skill-box:hover {
+  background-color: #d4c4ff;
+  cursor: default;
+}
